@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Lotto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LottoViewController" customModule="Implementing_with_API" customModuleProvider="target" sceneMemberID="viewController">
@@ -279,7 +279,7 @@
                             <constraint firstItem="LTh-du-q9o" firstAttribute="top" secondItem="coP-iA-hyI" secondAttribute="bottom" constant="20" id="eNb-HE-Lml"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="86r-2d-iO4"/>
+                    <tabBarItem key="tabBarItem" title="Lotto" image="pencil.tip.crop.circle" catalog="system" id="86r-2d-iO4"/>
                     <connections>
                         <outlet property="bonusBackView" destination="aSn-Ey-Qpc" id="VEP-Sk-evF"/>
                         <outlet property="drwNoDateLabel" destination="yyP-ku-6R8" id="1PB-4Q-Gwk"/>
@@ -308,17 +308,84 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-34.507042253521128"/>
         </scene>
-        <!--Item-->
+        <!--Beer-->
         <scene sceneID="hue-5g-ktg">
             <objects>
                 <viewController id="CBO-K3-xQv" customClass="BeerViewController" customModule="Implementing_with_API" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHR-bn-fXb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OMP-rw-9wE">
+                                <rect key="frame" x="20" y="79" width="353" height="620"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘은 이 맥주를 추천합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpL-zc-Vhg">
+                                        <rect key="frame" x="38.666666666666657" y="0.0" width="275.66666666666674" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="hh7-qj-Lxe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="xJz-LL-xdy">
+                                        <rect key="frame" x="76.000000000000014" y="50" width="201.33333333333337" height="213"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5V-J1-PhX">
+                                        <rect key="frame" x="156.66666666666666" y="283" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4Bs-SC-0x7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="            " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-9F-aAh">
+                                        <rect key="frame" x="151.33333333333334" y="333" width="50.666666666666657" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="NpV-gz-MtF">
+                                        <rect key="frame" x="56.666666666666686" y="373.33333333333331" width="240" height="246.66666666666669"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOR-Lh-AUo">
+                                <rect key="frame" x="115.33333333333333" y="719" width="162.66666666666669" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OrV-Tk-xqB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise.circle" catalog="system" title="다른 맥주 추천받기" imagePadding="4">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15" weight="bold"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="beerChangeButton:" destination="CBO-K3-xQv" eventType="touchUpInside" id="XAh-e4-5dT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Sdp-vJ-xUp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OMP-rw-9wE" firstAttribute="leading" secondItem="Sdp-vJ-xUp" secondAttribute="leading" constant="20" id="5AT-UJ-Rb8"/>
+                            <constraint firstItem="Sdp-vJ-xUp" firstAttribute="bottom" secondItem="yOR-Lh-AUo" secondAttribute="bottom" constant="20" id="7RA-vx-6Rh"/>
+                            <constraint firstItem="yOR-Lh-AUo" firstAttribute="top" secondItem="OMP-rw-9wE" secondAttribute="bottom" constant="20" id="9RO-Fz-kSb"/>
+                            <constraint firstAttribute="trailing" secondItem="OMP-rw-9wE" secondAttribute="trailing" constant="20" id="9aM-Cd-XoB"/>
+                            <constraint firstItem="yOR-Lh-AUo" firstAttribute="centerX" secondItem="yHR-bn-fXb" secondAttribute="centerX" id="Rt6-7T-ki2"/>
+                            <constraint firstItem="xJz-LL-xdy" firstAttribute="height" secondItem="Sdp-vJ-xUp" secondAttribute="height" multiplier="0.3" id="T4d-IB-fGz"/>
+                            <constraint firstItem="OMP-rw-9wE" firstAttribute="top" secondItem="Sdp-vJ-xUp" secondAttribute="top" constant="20" id="vXh-ou-tjg"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tKz-QU-PXr"/>
+                    <tabBarItem key="tabBarItem" title="Beer" image="battery.100.bolt" catalog="system" id="tKz-QU-PXr"/>
+                    <connections>
+                        <outlet property="beerImage" destination="xJz-LL-xdy" id="wTo-jG-2Rn"/>
+                        <outlet property="descriptionLabel" destination="A6d-9F-aAh" id="343-10-I2v"/>
+                        <outlet property="nameLabel" destination="I5V-J1-PhX" id="vYp-li-5Hd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iP6-qa-tzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +411,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise.circle" catalog="system" width="128" height="123"/>
+        <image name="battery.100.bolt" catalog="system" width="128" height="62"/>
+        <image name="pencil.tip.crop.circle" catalog="system" width="128" height="123"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="SystemDarkGray">
             <color red="0.40392160420000001" green="0.40784314269999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -362,6 +432,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

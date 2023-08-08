@@ -20,6 +20,7 @@
 		550193622A822C0200B6EA56 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193612A822C0200B6EA56 /* BeerViewController.swift */; };
 		550193652A822C9C00B6EA56 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193642A822C9C00B6EA56 /* ViewController+Extension.swift */; };
 		550193672A824B6100B6EA56 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193662A824B6100B6EA56 /* UIButton+Extension.swift */; };
+		5501936A2A8258F700B6EA56 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 550193692A8258F700B6EA56 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5501936A2A8258F700B6EA56 /* Kingfisher in Frameworks */,
 				550193602A822ADE00B6EA56 /* SwiftyJSON in Frameworks */,
 				5501935D2A822ACA00B6EA56 /* Alamofire in Frameworks */,
 			);
@@ -145,6 +147,7 @@
 			packageProductDependencies = (
 				5501935C2A822ACA00B6EA56 /* Alamofire */,
 				5501935F2A822ADE00B6EA56 /* SwiftyJSON */,
+				550193692A8258F700B6EA56 /* Kingfisher */,
 			);
 			productName = "Implementing with API";
 			productReference = 5501933C2A8229F100B6EA56 /* Implementing with API.app */;
@@ -177,6 +180,7 @@
 			packageReferences = (
 				5501935B2A822ACA00B6EA56 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				5501935E2A822ADE00B6EA56 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				550193682A8258F700B6EA56 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 5501933D2A8229F100B6EA56 /* Products */;
 			projectDirPath = "";
@@ -448,6 +452,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		550193682A8258F700B6EA56 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -460,6 +472,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5501935E2A822ADE00B6EA56 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		550193692A8258F700B6EA56 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550193682A8258F700B6EA56 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
