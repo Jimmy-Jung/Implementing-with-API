@@ -9,7 +9,7 @@ import UIKit.UIViewController
 
 extension UIViewController {
     ///  뷰컨트롤러 이름 가져오기
-    var identifier: String {
+    static var identifier: String {
         return String(describing: self)
     }
 }

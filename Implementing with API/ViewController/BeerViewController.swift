@@ -13,12 +13,18 @@ import Kingfisher
 class BeerViewController: UIViewController {
 
     @IBOutlet weak var beerImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    
+    var beer: Beer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getBeer()
+        navigationController?.navigationBar.prefersLargeTitles = false
+        titleLabel.text = beer?.title
+        descriptionLabel.text = beer?.description
+        let imageUrl = URL(string: beer?.image ?? "")
+        beerImage.kf.setImage(with: imageUrl)
     }
     
     @IBAction func beerChangeButton(_ sender: Any) {
@@ -45,7 +51,7 @@ class BeerViewController: UIViewController {
                         .transition(.fade(0.5))
                     ]
                 )
-                nameLabel.text = name
+                titleLabel.text = name
                 descriptionLabel.text = description
       
             case .failure(let error):
