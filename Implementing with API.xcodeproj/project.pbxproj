@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		550193402A8229F100B6EA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501933F2A8229F100B6EA56 /* AppDelegate.swift */; };
 		550193422A8229F100B6EA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193412A8229F100B6EA56 /* SceneDelegate.swift */; };
-		550193442A8229F100B6EA56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193432A8229F100B6EA56 /* ViewController.swift */; };
+		550193442A8229F100B6EA56 /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193432A8229F100B6EA56 /* LotteryViewController.swift */; };
 		550193472A8229F100B6EA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550193452A8229F100B6EA56 /* Main.storyboard */; };
 		550193492A8229F300B6EA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550193482A8229F300B6EA56 /* Assets.xcassets */; };
 		5501934C2A8229F300B6EA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5501934A2A8229F300B6EA56 /* LaunchScreen.storyboard */; };
@@ -17,19 +17,21 @@
 		550193562A822A2F00B6EA56 /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193552A822A2F00B6EA56 /* APIKEY.swift */; };
 		5501935D2A822ACA00B6EA56 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5501935C2A822ACA00B6EA56 /* Alamofire */; };
 		550193602A822ADE00B6EA56 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5501935F2A822ADE00B6EA56 /* SwiftyJSON */; };
+		550193622A822C0200B6EA56 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550193612A822C0200B6EA56 /* BeerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5501933C2A8229F100B6EA56 /* Implementing with API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Implementing with API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5501933F2A8229F100B6EA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		550193412A8229F100B6EA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		550193432A8229F100B6EA56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		550193432A8229F100B6EA56 /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
 		550193462A8229F100B6EA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		550193482A8229F300B6EA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5501934B2A8229F300B6EA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5501934D2A8229F300B6EA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550193532A822A1400B6EA56 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		550193552A822A2F00B6EA56 /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
+		550193612A822C0200B6EA56 /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,8 @@
 		5501935A2A822A9700B6EA56 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				550193432A8229F100B6EA56 /* ViewController.swift */,
+				550193432A8229F100B6EA56 /* LotteryViewController.swift */,
+				550193612A822C0200B6EA56 /* BeerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -189,7 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550193442A8229F100B6EA56 /* ViewController.swift in Sources */,
+				550193622A822C0200B6EA56 /* BeerViewController.swift in Sources */,
+				550193442A8229F100B6EA56 /* LotteryViewController.swift in Sources */,
 				550193402A8229F100B6EA56 /* AppDelegate.swift in Sources */,
 				550193562A822A2F00B6EA56 /* APIKEY.swift in Sources */,
 				550193422A8229F100B6EA56 /* SceneDelegate.swift in Sources */,
