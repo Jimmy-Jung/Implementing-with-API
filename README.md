@@ -2,7 +2,7 @@
 
 # SeSAC 8월10일(목) 과제
 
-![Simulator Screen Recording - iPhone 14 - 2023-08-10 at 22 57 13](https://github.com/Jimmy-Jung/Implementing-with-API/assets/115251866/9fb6503c-be5b-44b0-89c4-f1beb77ef906)
+![Papago](https://github.com/Jimmy-Jung/Implementing-with-API/assets/115251866/3328433a-ab31-401f-8f0c-e30e542e4466)
 
 1. 번역할 내용을 입력하면 서버에서 언어를 감지합니다.
 2. 언어를 선택하면 Alert에 PickerView가 나타납니다.
