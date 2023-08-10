@@ -24,6 +24,9 @@
 		5501938C2A828C0100B6EA56 /* BeerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501938B2A828C0100B6EA56 /* BeerTableViewController.swift */; };
 		5501938E2A828C6F00B6EA56 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501938D2A828C6F00B6EA56 /* BeerTableViewCell.swift */; };
 		550193902A82911300B6EA56 /* TableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501938F2A82911300B6EA56 /* TableViewCell+Extension.swift */; };
+		553DBB622A84E0D5000ACEFA /* PapagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553DBB612A84E0D5000ACEFA /* PapagoViewController.swift */; };
+		553DBB662A851458000ACEFA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 553DBB652A851458000ACEFA /* SnapKit */; };
+		553DBB682A85163A000ACEFA /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553DBB672A85163A000ACEFA /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,8 @@
 		5501938B2A828C0100B6EA56 /* BeerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewController.swift; sourceTree = "<group>"; };
 		5501938D2A828C6F00B6EA56 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		5501938F2A82911300B6EA56 /* TableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		553DBB612A84E0D5000ACEFA /* PapagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapagoViewController.swift; sourceTree = "<group>"; };
+		553DBB672A85163A000ACEFA /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5501936A2A8258F700B6EA56 /* Kingfisher in Frameworks */,
+				553DBB662A851458000ACEFA /* SnapKit in Frameworks */,
 				550193602A822ADE00B6EA56 /* SwiftyJSON in Frameworks */,
 				5501935D2A822ACA00B6EA56 /* Alamofire in Frameworks */,
 			);
@@ -64,6 +70,7 @@
 			children = (
 				5501933E2A8229F100B6EA56 /* Implementing with API */,
 				5501933D2A8229F100B6EA56 /* Products */,
+				553DBB642A851458000ACEFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,7 @@
 				550193572A822A5600B6EA56 /* App */,
 				550193582A822A6000B6EA56 /* View */,
 				5501935A2A822A9700B6EA56 /* ViewController */,
+				553DBB602A84E099000ACEFA /* 8월10일(목)과제 */,
 			);
 			path = "Implementing with API";
 			sourceTree = "<group>";
@@ -137,6 +145,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		553DBB602A84E099000ACEFA /* 8월10일(목)과제 */ = {
+			isa = PBXGroup;
+			children = (
+				553DBB612A84E0D5000ACEFA /* PapagoViewController.swift */,
+				553DBB672A85163A000ACEFA /* Language.swift */,
+			);
+			name = "8월10일(목)과제";
+			path = "8월10일(목)과제";
+			sourceTree = "<group>";
+		};
+		553DBB642A851458000ACEFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +182,7 @@
 				5501935C2A822ACA00B6EA56 /* Alamofire */,
 				5501935F2A822ADE00B6EA56 /* SwiftyJSON */,
 				550193692A8258F700B6EA56 /* Kingfisher */,
+				553DBB652A851458000ACEFA /* SnapKit */,
 			);
 			productName = "Implementing with API";
 			productReference = 5501933C2A8229F100B6EA56 /* Implementing with API.app */;
@@ -190,6 +216,7 @@
 				5501935B2A822ACA00B6EA56 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				5501935E2A822ADE00B6EA56 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				550193682A8258F700B6EA56 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				553DBB632A851448000ACEFA /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 5501933D2A8229F100B6EA56 /* Products */;
 			projectDirPath = "";
@@ -227,6 +254,8 @@
 				550193902A82911300B6EA56 /* TableViewCell+Extension.swift in Sources */,
 				550193562A822A2F00B6EA56 /* APIKEY.swift in Sources */,
 				5501938C2A828C0100B6EA56 /* BeerTableViewController.swift in Sources */,
+				553DBB622A84E0D5000ACEFA /* PapagoViewController.swift in Sources */,
+				553DBB682A85163A000ACEFA /* Language.swift in Sources */,
 				550193422A8229F100B6EA56 /* SceneDelegate.swift in Sources */,
 				550193672A824B6100B6EA56 /* UIButton+Extension.swift in Sources */,
 			);
@@ -472,6 +501,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		553DBB632A851448000ACEFA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -489,6 +526,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 550193682A8258F700B6EA56 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		553DBB652A851458000ACEFA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 553DBB632A851448000ACEFA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
